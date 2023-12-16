@@ -1,0 +1,73 @@
+[
+{
+    "id": "Xiaomi Redmi 12C",
+    "brand": "Xiaomi",
+    "add": "3/32GB Graphite Blue",
+    "credit": 105,
+    "price": 2099,
+    "image": "https://ultra-smart.ru/center/iblock/7af/smartfon_xiaomi_redmi_9c_64_gb_nfc_siniy_detail.png"
+},
+
+
+{
+    "id": "Xiaomi Redmi 13 lite",
+    "brand": "Xiaomi",
+    "add": "8/256GB Blue",
+    "credit": 890,
+    "price": 8500,
+    "image": "https://cdn1.ozone.ru/s3/multimedia-v/6569965243.jpg"
+},
+
+
+{
+    "id": "Samsung Galaxy S10",
+    "brand": "Samsung",
+    "add": "12/128GB White",
+    "credit": 750,
+    "price": 7000,
+    "image": "https://image-us.samsung.com/SamsungUS/mobile/phones/06102019-new/First_s10_5G_Lockup1_Silver_gallery.jpg"
+},
+
+
+{
+    "id": "Samsung Galaxy S23",
+    "brand": "Samsung",
+    "add": "8/256GB White",
+    "credit": 850,
+    "price": 9000,
+    "image": "https://www.androidro.ro/wp-content/uploads/samsung-galaxy-a13-poza-5.jpg"
+},
+
+
+{
+    "id": "Iphone 13 ",
+    "brand": "Apple",
+    "add": "8/64GB White",
+    "credit": 1200,
+    "price": 19000,
+    "image": "https://basket-03.wb.ru/vol422/part42248/42248470/images/big/1.jpg"
+},
+
+
+{
+    "id": "Iphone 14 PRO",
+    "brand": "Apple",
+    "add": "12/128GB White",
+    "credit": 1300,
+    "price": 21000,
+    "image": "https://cdn.ithinkdiff.com/wp-content/uploads/2022/07/iPhone-14-Pro-Max.png"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

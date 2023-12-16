@@ -1,0 +1,1102 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider img {
+    height: 550px;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.589);
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 0, 255);
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    margin: auto;
+    transition: .3s ease;
+    border-radius: 5px;
+    
+}
+
+#right:hover{
+    background-color: rgb(0, 47, 255);
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(163, 6, 194);
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    margin: auto;
+    transition: .3s ease;
+    border-radius: 5px;
+}
+
+#left:hover{
+    background-color: rgb(98, 0, 255);
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.images img {
+    height: 550px;
+    width:1250px;
+    border-radius: 20px;
+}
+
+
+.btn {
+    font-size: 18px;
+    font-weight: 700;
+
+    background-color: rgb(194, 6, 94);
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    transition: .3s ease;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: rgb(98, 0, 255);
+
+}
+
+.images h1 {
+    color: #B403E8;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.images p {
+    font-size: 20px;
+    color: #303030;
+}
+
+.news {
+    padding: 15px;
+    gap: 15px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news img {
+    object-fit: cover;
+    height: 300px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.news h2 {
+    font-size: 18px;
+    color: #303030;
+}
+
+.news2 {
+    padding: 15px;
+    gap: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news2 h2 {
+    font-size: 30px;
+    color: #161515;
+}
+
+
+.news2 h3 {
+    font-size: 21px;
+    color: #303030;
+}
+
+
+.news2 p {
+    font-size: 17px;
+    color: #303030;
+}
+
+/* News */
+
+.noutati {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.texl {
+    height: 50px;
+    background-color: #14C69E;
+    width: 70px;
+ 
+
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 19px;
+color: #303030;
+
+}
+
+.info p {
+    font-size: 18px;
+    color: #3d3d53;
+}
+
+.info2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info2 img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(175, 6, 6, 0.856);
+}
+
+.info2 h1 {
+    font-size: 21px;
+    color: #303033;
+
+}
+
+.info2 p {
+    font-size: 19px;
+    color: #4b4b72;
+}
+
+/* DarkMode */
+
+.dark {
+    background-color: #4b4b72;
+    transition: .3s ease;
+
+}
+
+.light {
+    background-color: #fff;
+    transition: .4s ease;
+
+}
+
+.dark button {
+    height: 33px;
+    width: 160px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+border-radius: 15px;
+
+}
+
+.light button{
+    height: 33px;
+    width: 160px;
+    background-color: #7e0000;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+border-radius: 15px;
+}
+
+/* Magazin Online */
+
+.divuri {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+height: 100%;
+width: 100%;
+}
+
+.im1 {
+    height: 500px;
+    width: 950px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.im2 {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.im3 {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.im4 {
+    height: 200px;
+    width: 400px;
+        object-fit: cover;
+    border-radius: 10px;
+}
+
+.divuri h3 {
+    font-size: 18px;
+    color: #303030;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+}
+
+.add img {
+    height: 500px;
+    width: 900px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #B403E8;
+}
+
+
+.add h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+.add h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #14C69E;
+    
+}
+
+.add p {
+    font-size: 17px;
+    font-weight: 800;
+    color: #303030;
+
+}
+
+
+.all {
+    height: 45px;
+    width: 150px;
+    background-color: #fff;
+    border: 2px solid #B403E8;
+    color: #B403E8;
+    border-radius: 20px;
+font-size: 18px;
+font-weight: 500;
+transition: .2s ;
+}
+
+.all:hover{
+    background-color: #B403E8;
+    color: #fff;
+
+}
+
+.alter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.alter img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.add h1 {
+    font-size: 35px;
+    color: #303030;
+    font-weight: 700;
+}
+
+
+/*Conectare/ Abonament */
+
+.abonament {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+border: 2px solid #5c5858;
+width: 250px;
+border-radius: 13px;
+cursor: pointer;
+transition: .3s ease;
+}
+
+.abonament:hover {
+   border: 2px solid #990AE3;
+}
+
+#next {
+    color: #990AE3;
+font-size: 23px;
+font-weight: 500;
+
+}
+
+.abonament h2 {
+font-size: 20px;
+color: #292B2c;
+
+}
+
+.abonament p {
+    font-size: 17px;
+color: #292B2c;
+}
+
+.abonament input {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.abonament h1 {
+color: #000000;
+font-size: 30px;
+background-color: #B403E8;
+font-weight: 600;
+text-align: center;
+border-radius: 10px;
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+border-radius: 5px;
+height: 52px;
+    background-color: #990AE3;
+    width: 230px;
+
+}
+
+.ads h2{ 
+    color: #fff;
+    font-size: 23px;
+    font-weight: 720;
+
+
+}
+
+.ads button {
+    border: 2px solid #14C69E ;
+    height: 35px;
+    border-radius: 10px;
+    width: 110px;
+    color: #14C69E ;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ads button:hover {
+    background-color: #fff;
+color: #303030;
+}
+
+.adb {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+
+.ads .bta {
+    background-color: #14C69E;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    width: 110px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s; 
+}
+
+
+.ads .bta:hover {
+    background-color: #fff;
+color: #14C69E;
+}
+
+#links {
+    background-color: #990AE3;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+height: 100%;
+width: 100%;
+}
+
+#links img {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+.ard {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.ard img {
+    height: 200px;
+    border-radius: 14px;
+    width: 370px;
+    object-fit: cover;
+}
+
+.ard p{ 
+font-weight: 500;
+color: #303030;
+}
+
+/* Conectare/Reincarcare */
+
+.isa {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+
+}
+.isa img {
+    height:250px;
+    object-fit: cover;
+    width: 650px;
+    border-radius: 30px;
+    border: 2px solid #B403E8;
+}
+
+/* Conectare/My moldcell */
+
+.myM {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+flex-direction: row-reverse;
+flex-direction: column;
+}
+
+
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moldcell {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #B403E8;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.moldcell h3 {
+    font-size: 25px;
+    color: #990AE3;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.moldcell img {
+    height: 300px;
+    margin: auto;
+
+}
+
+.moldcell p {
+    font-size: 17px;
+    font-weight: 600;
+    color: #303030;
+
+}
+
+.kl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.kl img {
+    height: 300px;
+}
+
+.alters {
+   
+    text-align: center;
+    align-items: start;
+    padding: 30px;
+}
+
+.infor {
+    background: url("https://moldcell.md/files/landing/numerele-mele-ro_0.png");
+    height: 600px;
+    width: 100%;
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+padding: 5px;
+}
+
+.alters h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+.alters h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #b403e8;
+}
+
+.alters p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #303030;
+
+}
+
+.infor2 {
+    background: url("https://moldcell.md/files/landing/scutura-telefonul-mymoldcell.png");
+    height: 700px;
+    width: 100%;
+background-size: cover;
+}
+
+.infor2 h1  {
+font-size: 50px;
+color: #fff;
+font-weight: 700;
+text-align: center;
+
+}
+
+.infor2 h3 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.infor2 p {
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.infor3 {
+    background: url("https://blog.superhuman.com/content/images/2021/01/Carbon_Header.jpg");
+    display: flex;
+    height: 660px;
+    width: 100%;
+background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infor3 h3 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.infor3 p {
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;  
+}
+
+.infor3:hover {
+    cursor: pointer;
+    filter: brightness(84%);
+}
+
+/* Conectare/Contacte */
+
+.contacte {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.contacte h2 {
+    font-size: 40px;
+    color: #303030;
+    font-weight: 500;
+
+}
+
+.contacte h3 {
+    font-weight: 700;
+    font-size: 17px;
+    color: #990AE3;
+}
+
+.contacte p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+}
+
+/* Conectare/Portare */
+
+#port_img {
+height: 290px;
+
+}
+
+.ard h3 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+text-align: center;
+
+}
+
+.ard h4 {
+    text-align: center;
+    font-weight: 500;
+    text-decoration: line-through;
+    font-size: 19px;
+}
+
+/* Conectare/ Cartela */
+
+
+.e-abonament {
+    padding: 20px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #ececec;
+}
+
+.e-abonament h2 {
+    font-size: 35px;
+    color: #303030;
+    font-weight: 700;
+
+}
+
+.e-abonament p {
+    font-weight: 500;
+    font-size: 17px;
+    color: #303030;
+
+}
+
+.e-abonament h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #303030;
+}
+
+#add_img {
+    height: 130px;
+    margin: auto;
+    width: 130px;
+}
+
+/* Conectare / Internet  / Fibra TV*/
+
+.abonament h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #303030;
+
+}
+
+.abonament h1 {
+    font-size: 32px;
+font-weight: 700;
+color: rgb(255, 255, 49);
+}
+
+.abonament .txt {
+    font-size: 43px;
+    font-weight: 700;
+
+}
+
+.abonament #txt {
+    font-size: 34px;
+    font-weight: 600;
+
+}
+
+
+.ard .router_img {
+    margin: 12px ;
+height: 250px;
+width: 310px;
+}
+
+
+/* Conectare/Internet/MoldcellPlus */
+
+.moldcell_plus {
+    background: url("https://moldcell.md/files/landing/moldcellplusmobile-fibratv-1920.png");
+    height: 1200px;
+background-size: cover;    
+filter: brightness(90%);
+}
+
+.validation {
+    background-color: #252424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.validation h1 {
+font-size: 38px;
+font-weight: 700;
+color: #fff;
+}
+
+.validation h3 {
+    color: #FFDF00;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.validation h2 {
+    font-size: 19px;
+    font-weight: 400;
+ color: #fff;
+
+}
+
+.validation input {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffff;
+}
+
+
+/* Conectare/Internet/Fibra */
+
+.alter .internet_id {
+    height: 570px;
+    width: 100%;
+
+}
+
+.router {
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 500px;
+width: 100%;
+
+}
+
+.router img {
+    padding: 10px;
+    height: 350px;
+    border: 2px solid #303030;
+    border-radius: 20px;
+box-shadow: 0px 0px 5px black;
+}
+
+.router p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #303030;
+}
+
+/* Conectare/ Internet / Grila */
+
+.grila {
+    background: url("https://newsmaker.md/wp-content/uploads/2022/11/m-doc-1920x1080-ru.jpg");
+    height: 520px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grila h2 {
+    padding: 20px;
+    font-size:45px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+
+}
+
+.grila h1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #ececec;
+    text-shadow: 0px 0px 4px black;
+    text-align: center;
+
+}
+
+#comanda {
+    font-size: 20px;
+    background-color: #FFDF00;
+    width: 250PX;
+    height: 50PX;
+    border-radius: 22px;
+    font-weight: 900;
+    color: #B403E8;
+filter: brightness(91%);
+}
+
+#comanda:hover {
+    filter: brightness(100%);
+}
+
+.abonament h4 {
+    text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #303030;
+  text-decoration: line-through;
+  margin: auto;
+}
+
+.alter ._img {
+    height: 600px;
+    width: 100%;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
+    align-items: center;
+    background: url("https://cutewallpaper.org/23/android-tv-kodi-wallpaper/50511445.jpg");
+    background-size: cover;
+    flex-direction: column;
+    height: 620px;
+    width: 100%;
+}
+
+.box h2 {
+    margin: 10px auto;
+font-size: 40px;
+font-weight: 800;
+color: #fff;
+text-shadow: 0px 1px 6px #000000;
+text-align: center;
+}
+
+.box p {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000000;
+
+}
+
+
+/* Conectare/ Internet / Acoperire*/
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.location h3 {
+    font-size: 22px ;
+    color: #222529;
+    font-weight: 700;
+
+}
+
+.ard input {
+    height: 40px;
+    width: 270px;
+    background-color: #333333;
+    color: #fff;
+border-radius: 5px;
+padding: 10px;
+font-size: 18px;
+font-weight: 700;
+
+
+}
+
+.ard .port_img {
+    height: 385px;
+width: 100%;
+}
+
+/* Fundatie  */
+
+.fund_text {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.fund_text h2 {
+    margin: 15px;
+    padding: 10px;
+    color: #303030;
+    font-size: 19px;
+    font-weight: 600;
+
+}
+
+.fund_back {
+    background: url("https://cdn.digita.media/unimedia/superdesk/2020111912110/2b41d6c79cff7744b12b6d749440701f9798c9edfe6dcef5e89a19544d493c19.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+height: 700px;
+width: 100%;
+}
+
+.fund_back h2 {
+    color: #fff;
+    font-size: 41px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px #000000;
+}
+
+.fund_back h3 {
+    font-size: 20px;
+    color: #1d1c1c;
+    font-weight: 800;
+    text-align: center;
+}
+
+.fund_back p {
+    text-align: center;
+    font-size: 21px;
+    color: #383535;
+    font-weight: 800;
+}
+
+.socials {
+    background: url("https://semneaza.moldcell.md/logo");
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
+    gap: 15px;
+width: 100%;
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+
+}
