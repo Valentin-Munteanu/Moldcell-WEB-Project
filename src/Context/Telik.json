@@ -1,0 +1,50 @@
+[
+    {
+        "h": "Xiomi TV A2 43",
+        "brand": "Xiomi", 
+        "add": "32 Global Black",
+        "credit": 440,
+        "price": 3990,
+        "priceA": 3500,
+        "image": "https://www.jagatreview.com/wp-content/uploads/2022/09/front-Xiaomi-TV-A2-43-Inch-FHD-1228x720.png"
+    },
+    
+    
+    {
+        "h": "Televizor Xiomi LED 2023",
+        "brand": "Xiomi", 
+        "add": "4K UHD Global",
+        "credit":800,
+        "price": 7499,
+        "priceA": 7000,
+        "image": "https://vsesmart.ru/upload/iblock/fe8/efmv44l0xqbjydrzhu00tsa46bd6ebr1/televizor-xiaomi-mi-led-tv-p1-50-1.png"
+    },
+    
+    {
+        "h": "Televizor Xiomi Q2",
+        "brand": "Xiomi",
+        "add": "55 Global Black",
+        "credit":875,
+        "priceA":9000,
+        "price":9599,
+        "image":"https://i.blogs.es/919eee/xiaomi-tv-q2-series/840_560.jpeg"
+    },
+    
+
+        
+    {
+        "h": "Televizor LG 653UTE 65",
+        "brand": "LG",
+        "add": "Black",
+        "credit":1215,
+        "priceA":13200,
+        "price":14000,
+        "image":"https://televizor.msk.ru/images/shop/tv-lg-46-55/lg-49nano866-49quot-2020_full.jpg"
+    }
+
+
+
+
+
+
+]

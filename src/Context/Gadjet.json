@@ -1,0 +1,63 @@
+[
+    {
+        "g": "Consola Sony PlayStation 5",
+        "brand": "Sony PS 5 ", 
+        "add": "Disk Edition",
+        "credit": 1400,
+        "price": 13999,
+        "priceA": 11000,
+        "image": "https://avatars.mds.yandex.net/get-mpic/4732637/img_id3194534003369530750.png/orig"
+    },
+    
+    
+    {
+        "g": "Consola Xbox Series X",
+        "brand": "XBOX X ", 
+        "add": "1 TB Black + Forza Horizon 5",
+        "credit":1400,
+        "price": 11399,
+        "priceA": 10000,
+        "image": "https://cdn.mos.cms.futurecdn.net/DNPxoKhKvRKt9szzySdPvi.jpg"
+    },
+    
+    {
+        "g": "Apple Watch SE(2022)",
+        "brand": "Apple Watch",
+        "add": "44mm Midnight",
+        "credit":592,
+        "priceA":6000,
+        "price":6500,
+        "image":"https://techprincess.it/wp-content/uploads/2022/09/Apple-Watch-SE-2022-recensione.jpg"
+    },
+    
+
+        
+    {
+        "g": "Samsung Galaxy Watch 5 PRO",
+        "brand": "Samsung",
+        "add": "R920 45mm Black Titanium",
+        "credit":820,
+        "priceA":7600,
+        "price":8200,
+        "image":"https://ultra-smart.ru/center/iblock/461/3.png"
+    },
+
+
+
+        
+    {
+        "g": "Controler Microsoft",
+        "brand": "XBOX",
+        "add": "Xbox Velocity Green",
+        "credit": 160,
+        "priceA": 1200,
+        "price": 1500,
+        "image": "https://xbox-mag.net/content/thumbnails/uploads/2021/02/4ysv98hymvh61-tt-width-960-height-960-bgcolor-FFFFFF.jpg"
+    }
+
+
+
+
+
+
+]

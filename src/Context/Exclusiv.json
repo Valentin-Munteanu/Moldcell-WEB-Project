@@ -1,0 +1,60 @@
+[
+    {
+        "e": "Consola Sony PlayStation 5",
+        "brand": "Sony", 
+        "add": "Disk Edition",
+        "credit": 1400,
+        "price": 13999,
+        "priceA1": 11000,
+        
+        "image": "https://avatars.mds.yandex.net/get-mpic/4732637/img_id3194534003369530750.png/orig"
+    },
+    
+    
+    {
+        "e": "Consola Xbox Series X",
+        "brand": "XBOX", 
+
+        "add": "1 TB Black + Forza Horizon 5",
+        "credit":1400,
+        "price": 11399,
+        "priceA1": 10000,
+        "image": "https://cdn.mos.cms.futurecdn.net/DNPxoKhKvRKt9szzySdPvi.jpg"
+    },
+    
+    
+    {
+        "e": "Laptop Apple MacBook Air 2020",
+        "brand": "Apple",
+        "add": "M 1 8 /256GB Space Grey",
+        "credit": 2020,
+        "price": 18000,
+        "priceA1": 16000,
+        "image": "https://cdn.wccftech.com/wp-content/uploads/2020/11/M1-MacBook-Air-1.jpg"
+    },
+    
+    
+    {
+        "e": "One Plus Nord 2T",
+        "brand": "One Plus",
+        "add": "8/128GB Yade Fog",
+        "credit": 350,
+        "priceA1": 3500,
+        "price": 3000,
+        "image": "https://telefonon.ru/wp-content/uploads/2022/05/oneplus-nord-2t...jpg"
+    },
+    
+    
+    {
+        "e": "One Plus Nord G 5T",
+        "brand": "One Plus",
+        "add": "8/128GB Yade Fog",
+        "credit": 211,
+        "priceA1": 3000,
+        "price": 27000,
+        "image": "https://cdn1.ozone.ru/s3/multimedia-g/6150085060.jpg"
+    }
+    
+    
+
+]

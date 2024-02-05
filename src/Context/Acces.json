@@ -1,42 +1,49 @@
 [
     
 {
-    "id 1": "Casti Apple AirPods Pro ",
+    "i": "Casti Apple AirPods Pro",
     "brand": "Apple",
     "add": "(2nd generation White)",
     "credit": 605,
     "price": 6599,
-    "images": "https://cdn.mos.cms.futurecdn.net/wpqMKTCkzfT2pvngrkFVwP-1200-80.jpg"
+    "priceA1": 6500,
+
+    "image": "https://cdn.mos.cms.futurecdn.net/wpqMKTCkzfT2pvngrkFVwP-1200-80.jpg"
 },
 
 
 {
-    "id 1 ": "Casti Apple AirPods Pro 3 ",
+    "i": "Casti Apple AirPods Pro 3",
     "brand": "Apple",
     "add": "(3nd generation White)",
     "credit": 950,
     "price": 7300,
-    "images": "https://basket-05.wb.ru/vol755/part75576/75576215/images/big/1.jpg"
+    "priceA1": 7000,
+
+    "image": "https://basket-05.wb.ru/vol755/part75576/75576215/images/big/1.jpg"
 },
 
 
 {
-    "id 1 ": "Boxă portabilă JBL Flip 6 Black",
+    "i": "Boxă portabilă JBL Flip 6 Black",
     "brand": "JBL",
-    "adds": "Black",
+    "add": "Black",
     "credit": 330,
     "price": 3300,
-    "images": "https://media.sweetwater.com/api/i/q-82__ha-a3eea15987c8b037__hmac-7dfb87a16babcbae68f858858c0657cf4a5c8a9e/images/items/750/Flip5Blk-large.jpg"
+    "priceA1": 2900,
+
+    "image": "https://media.sweetwater.com/api/i/q-82__ha-a3eea15987c8b037__hmac-7dfb87a16babcbae68f858858c0657cf4a5c8a9e/images/items/750/Flip5Blk-large.jpg"
 },
 
 
 {
-    "id": "JBL CHARGE 4 ",
+    "i": "JBL CHARGE 4",
     "brand": "JBL",
     "add": "Black ",
+    "priceA1": 6000,
     "credit": 650,
-    "price": 6510,
-    "images": "https://eximo46.hr/wp-content/uploads/jbl-zvu%C4%8Dnik-png.png"
+    "price": 5010,
+    "image": "https://eximo46.hr/wp-content/uploads/jbl-zvu%C4%8Dnik-png.png"
 }
 
 

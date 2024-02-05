@@ -1,0 +1,79 @@
+[
+    {
+        "a": "Casti Apple AirPods Pro",
+        "brand": "Apple",
+        "add": "(2nd generation White)",
+        "credit": 605,
+        "price": 6599,
+        "priceA": 6100,
+        
+        "image": "https://cdn.mos.cms.futurecdn.net/wpqMKTCkzfT2pvngrkFVwP-1200-80.jpg"
+    },
+      
+    {
+        "a": "Casti Apple AirPods Pro 3",
+        "brand": "Apple",
+        "add": "(3nd generation White)",
+        "credit": 950,
+        "price": 7300,
+        "priceA": 7000,
+    
+        "image": "https://basket-05.wb.ru/vol755/part75576/75576215/images/big/1.jpg"
+    },
+    
+    {
+        "a": "Iphone 14 Pro",
+        "brand": "Apple",
+        "add": "6/128 GB Black",
+        "credit": 1350,
+        "price": 20999,
+        "priceA": 18000,
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Untitled4795.jpg"
+    },
+    
+    
+    {
+        "a": "Iphone 11 Pro",
+        "brand": "Apple",
+        "add": "64 Black",
+        "credit": 1150,
+        "priceA": 9500,
+        "price": 11000,
+        "image": "https://avatars.mds.yandex.net/get-mpic/5297001/img_id2356212730716884096.jpeg/orig"
+    },
+    
+    
+    {
+        "a": "Apple Watch SE(2022)",
+        "brand": "Apple",
+        "add": "44mm Midnight",
+        "credit": 592,
+        "priceA": 6000,
+        "price": 6500,
+        "image": "https://techprincess.it/wp-content/uploads/2022/09/Apple-Watch-SE-2022-recensione.jpg"
+    },
+    
+    
+    {
+        "a": "Apple Iphone 13",
+        "brand": "Apple",
+        "add": "4/128GB Gray",
+        "credit": 650,
+        "priceA": 13000,
+        "price": 14550,
+        "image": "https://basket-03.wb.ru/vol422/part42248/42248470/images/big/1.jpg"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]

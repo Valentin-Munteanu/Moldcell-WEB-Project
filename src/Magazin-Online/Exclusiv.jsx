@@ -8,7 +8,8 @@ import { IoLogoApple } from "react-icons/io5";
 import { IoIosTabletLandscape } from "react-icons/io";
 import { LiaLaptopSolid } from "react-icons/lia";
 import { IoWatchOutline } from "react-icons/io5";
-
+import { useContext } from 'react';
+import { Conte } from '../Context/Context';
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -19,6 +20,8 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
 const Exclusiv = () => {
+
+  const {dats,addToCart4} = useContext(Conte)
   return (
     <div>
       <div>
@@ -116,51 +119,35 @@ const Exclusiv = () => {
   
 </div>
 
+<br />
 
+{
+  dats.map(obj => (
+  <a href={`/productE/${obj.e}`}>
 
 <div className= 'flex justify-center items-center  flex-col' >
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://avatars.mds.yandex.net/get-mpic/4732637/img_id3194534003369530750.png/orig" alt="" />
-  <h2  className='font-semibold text-xl' >Consola Sony PlayStation 5 </h2>
-  <h3 className='font-semibold text-lg'>Disk Edition</h3>
-  <p className='font-semibold text-xl text-green-500' >1400 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >13999 lei</p>
+<img className='h-72 rounded-xl border hover:border-violet-500 ' src={obj.image} alt="" />
 
 
+<h2 className='font-semibold text-xl'>{obj.e}</h2>
 
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://cdn.mos.cms.futurecdn.net/DNPxoKhKvRKt9szzySdPvi.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Consola Xbox Series X</h2>
-  <h3 className='font-semibold text-lg'>1 TB Black + Forza Horizon 5 </h3>
-  <p className='font-semibold text-xl text-green-500' >1400 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >13999 lei</p>
+<h3 className='font-semibold text-lg'>{obj.add}</h3>
+<br />
 
+<p className='font-semibold text-xl text-green-500'>{obj.credit} lei lunar</p>
+<p className='font-semibold text-xl text-green-700'>{obj.price} lei</p>
 
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://cdn.wccftech.com/wp-content/uploads/2020/11/M1-MacBook-Air-1.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Laptop Apple MacBook Air 2020 </h2>
-  <h3 className='font-semibold text-lg'>M 1 8 /256GB Space Grey</h3>
-  <p className='font-semibold text-xl text-green-500' >2020 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >18000 lei</p>
+<Link to={`/productE/${obj.e}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
+<br />
+<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart4(obj.e)}>Adauga in cos</button>
 
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://telefonon.ru/wp-content/uploads/2022/05/oneplus-nord-2t...jpg" alt="" />
-  <h2  className='font-semibold text-xl' >One Plus Nord 2T  </h2>
-  <h3 className='font-semibold text-lg'>8/128GB Yade Fog</h3>
-  <p className='font-semibold text-xl text-green-500' >351 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >3500 lei</p>
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://cdn1.ozone.ru/s3/multimedia-g/6150085060.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >One Plus Nord G 5T  </h2>
-  <h3 className='font-semibold text-lg'>8/128GB Yade Fog</h3>
-  <p className='font-semibold text-xl text-green-500' >211 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >3000 lei</p>
-
-
-
-
-
-
+<br />
 </div>
 
+
+  </a>
+  ))
+}
 
 
 <div>

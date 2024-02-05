@@ -8,7 +8,8 @@ import { IoLogoApple } from "react-icons/io5";
 import { IoIosTabletLandscape } from "react-icons/io";
 import { LiaLaptopSolid } from "react-icons/lia";
 import { IoWatchOutline } from "react-icons/io5";
-
+import { useContext } from 'react';
+import { Conte } from '../Context/Context';
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -18,8 +19,9 @@ import { CiWallet } from "react-icons/ci";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
-
 const Gadjeturi = () => {
+
+  const {gadj,addToCart6} = useContext(Conte)
   return (
     <div>
       <div>
@@ -117,54 +119,35 @@ const Gadjeturi = () => {
   
 </div>
 
+<br />
 
+{
+gadj.map(obj => (
+  <a href={`/productG/${obj.g}`}>
 
 <div className= 'flex justify-center items-center  flex-col' >
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://avatars.mds.yandex.net/get-mpic/4732637/img_id3194534003369530750.png/orig" alt="" />
-  <h2  className='font-semibold text-xl' >Consola Sony PlayStation 5 </h2>
-  <h3 className='font-semibold text-lg'>Disk Edition</h3>
-  <p className='font-semibold text-xl text-green-500' >1400 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >13999 lei</p>
+<img className='h-72 rounded-xl border hover:border-violet-500 ' src={obj.image} alt="" />
 
 
+<h2 className='font-semibold text-xl'>{obj.g}</h2>
 
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://cdn.mos.cms.futurecdn.net/DNPxoKhKvRKt9szzySdPvi.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Consola Xbox Series X</h2>
-  <h3 className='font-semibold text-lg'>1 TB Black + Forza Horizon 5 </h3>
-  <p className='font-semibold text-xl text-green-500' >1400 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >13999 lei</p>
+<h3 className='font-semibold text-lg'>{obj.add}</h3>
+<br />
 
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://ultra-smart.ru/center/iblock/461/3.png" alt="" />
-  <h2  className='font-semibold text-xl' >Samsung Galaxy Watch 5 PRO </h2>
-  <h3 className='font-semibold text-lg'>R920 45mm Black Titanium</h3>
-  <p className='font-semibold text-xl text-green-500' >820 lei pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >8199 lei</p>
+<p className='font-semibold text-xl text-green-500'>{obj.credit} lei lunar</p>
+<p className='font-semibold text-xl text-green-700'>{obj.price} lei</p>
 
+<Link to={`/productG/${obj.g}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
+<br />
+<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart6(obj.g)}>Adauga in cos</button>
 
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://xbox-mag.net/content/thumbnails/uploads/2021/02/4ysv98hymvh61-tt-width-960-height-960-bgcolor-FFFFFF.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Controler Microsoft </h2>
-  <h3 className='font-semibold text-lg'>Xbox Velocity Green</h3>
-  <p className='font-semibold text-xl text-green-500' >160 lei lunar</p>
-  <p className='font-semibold text-xl text-green-700' >1499 lei</p>
-
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://techprincess.it/wp-content/uploads/2022/09/Apple-Watch-SE-2022-recensione.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Apple Watch SE(2022) </h2>
-  <h3 className='font-semibold text-lg'>44mm Midnight</h3>
-  <p className='font-semibold text-xl text-green-500' >592 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >6559 lei</p>
-
-
-
-
-
-
-
-
+<br />
 </div>
 
+
+  </a>
+  ))
+}
 
 
 <div>
@@ -242,6 +225,7 @@ const Gadjeturi = () => {
     </div>
 
 </div>
+
 
     </div>
   )

@@ -8,7 +8,8 @@ import { IoLogoApple } from "react-icons/io5";
 import { IoIosTabletLandscape } from "react-icons/io";
 import { LiaLaptopSolid } from "react-icons/lia";
 import { IoWatchOutline } from "react-icons/io5";
-
+import { useContext } from 'react';
+import { Conte } from '../Context/Context';
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -18,8 +19,9 @@ import { CiWallet } from "react-icons/ci";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
-
 const Laptopuri = () => {
+
+  const {nout,addToCart7} = useContext(Conte)
   return (
     <div>
       <div>
@@ -119,40 +121,33 @@ const Laptopuri = () => {
 
 <br />
 
+{
+nout.map(obj => (
+  <a href={`/productN/${obj.n}`}>
+
 <div className= 'flex justify-center items-center  flex-col' >
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://www.pcplanet.ru/public_files/products/f9/16/f916581133e58001ef888066c967bf5a/original.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Laptop Lenovo IdeaPad 1 </h2>
-  <h3 className='font-semibold text-lg'>15IGL7 N4040 4/256 SSB /  Gray</h3>
-  <p className='font-semibold text-xl text-green-500' >550 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >4999 lei</p>
+<img className='h-72 rounded-xl border hover:border-violet-500 ' src={obj.image} alt="" />
 
 
+<h2 className='font-semibold text-xl'>{obj.n}</h2>
 
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://applen1.ru/upload/medialibrary/macbook_air_15_2023.jpeg" alt="" />
-  <h2  className='font-semibold text-xl' >Laptop Apple MacBook Air 15 2023 </h2>
-  <h3 className='font-semibold text-lg'>M2 8/256GB Midnight </h3>
-  <p className='font-semibold text-xl text-green-500' >3360 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >33599 lei</p>
+<h3 className='font-semibold text-lg'>{obj.add}</h3>
+<br />
 
+<p className='font-semibold text-xl text-green-500'>{obj.credit} lei lunar</p>
+<p className='font-semibold text-xl text-green-700'>{obj.price} lei</p>
 
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://cdn.wccftech.com/wp-content/uploads/2020/11/M1-MacBook-Air-1.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Laptop Apple MacBook Air 2020 </h2>
-  <h3 className='font-semibold text-lg'>M 1 8 /256GB Space Grey</h3>
-  <p className='font-semibold text-xl text-green-500' >2020 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >18000 lei</p>
-
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://newmart.ru/upload/iblock/996/9965d89634774ba15531a0c0af1bbab5.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Laptop ACER Swift 3  </h2>
-  <h3 className='font-semibold text-lg'>14 i5-1240P / 512 GB Haze Gold</h3>
-  <p className='font-semibold text-xl text-green-500' >1850 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >17500 lei</p>
+<Link to={`/productN/${obj.n}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
+<br />
+<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart7(obj.n)}>Adauga in cos</button>
 
 
 </div>
 
+
+  </a>
+  ))
+}
 
 
 <div>
@@ -230,6 +225,7 @@ const Laptopuri = () => {
     </div>
 
 </div>
+
 
     </div>
   )

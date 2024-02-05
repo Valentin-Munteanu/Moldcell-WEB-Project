@@ -1,15 +1,8 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
+import { useContext } from 'react'
+import { Conte } from '../Context/Context'
 import { Link } from 'react-router-dom'
-import { FaSimCard } from "react-icons/fa";
-import { IoPhonePortraitSharp } from "react-icons/io5";
-import { FaHeadphonesAlt } from "react-icons/fa";
-import { GiFallingStar } from "react-icons/gi";
-import { IoLogoApple } from "react-icons/io5";
-import { IoIosTabletLandscape } from "react-icons/io";
-import { LiaLaptopSolid } from "react-icons/lia";
-import { IoWatchOutline } from "react-icons/io5";
-import { useContext } from 'react';
-import { Conte } from '../Context/Context';
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -19,12 +12,26 @@ import { CiWallet } from "react-icons/ci";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
-const Tablete = () => {
+import { FaSimCard } from "react-icons/fa";
+import { IoPhonePortraitSharp } from "react-icons/io5";
+import { FaHeadphonesAlt } from "react-icons/fa";
+import { GiFallingStar } from "react-icons/gi";
+import { IoLogoApple } from "react-icons/io5";
+import { IoIosTabletLandscape } from "react-icons/io";
+import { LiaLaptopSolid } from "react-icons/lia";
+import { IoWatchOutline } from "react-icons/io5";
 
-  const {tab, addToCart5} = useContext(Conte)
+const ProductT = () => {
+    const {nout,addToCart7} = useContext (Conte)
+    const {n} = useParams()
+    const currentProduct = nout.find(obj=> obj.n === n)
   return (
+    
+
+
     <div>
-      <div>
+
+<div>
       <header className='flex-justify-between align-center bg-gray-200 gap-9'>
         <nav>
           <ul className='flex gap-16 text-lg items-center p-3'>
@@ -119,38 +126,40 @@ const Tablete = () => {
   
 </div>
 
-<br />
-
-{
- tab.map(obj => (
-  <a href={`/productT/${obj.t}`}>
-
-<div className= 'flex justify-center items-center  flex-col' >
-<img className='h-72 rounded-xl border hover:border-violet-500 ' src={obj.image} alt="" />
+    
 
 
-<h2 className='font-semibold text-xl'>{obj.t}</h2>
 
-<h3 className='font-semibold text-lg'>{obj.add}</h3>
-<br />
+    <div className='flex items-center flex-col gap-3'>
+        <br />
+        <img className='h-2/4 w-96 object-cover rounded-xl' src={currentProduct.image} alt="" />
+     
+            <h2 className='text-3xl font-semibold'>{currentProduct.n}</h2>
+            <h3 className='text-xl font-semibold text-gray-600'>Brand: {currentProduct.brand}</h3>
+            <h3 className='text-xl font-semibold text-gray-500'>{currentProduct.add}</h3>
+          
 
-<p className='font-semibold text-xl text-green-500'>{obj.credit} lei lunar</p>
-<p className='font-semibold text-xl text-green-700'>{obj.price} lei</p>
+<div className='text'>
 
-<Link to={`/productT/${obj.t}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
-<br />
-<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart5(obj.t)}>Adauga in cos</button>
-<br />
+            <h2>PRET CU ABONAMENT </h2>
+            <h3> {currentProduct.priceA} lei</h3>
+            <br />
+            <h2>PRET ONLINE </h2> 
+    <h3>{currentProduct.price} lei</h3>
+    <br />
+    <h2>IN RATE </h2> 
+     <h3>{currentProduct.credit}lei/lunar</h3>
+    </div>
+            <Link to="/laptopuri"><button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600'>Laptopuri</button></Link>
 
-</div>
-
-
-  </a>
-  ))
-}
+            <button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart7(currentProduct.n)}>Adauga in cos</button>
 
 
 <div>
+
+
+
+  
 <header className='flex-justify-between align-center bg-gray-200 gap-9'>
   <nav>
     <ul className='flex gap-16 text-lg items-center p-3'>
@@ -226,9 +235,11 @@ const Tablete = () => {
 
 </div>
 
+        </div>
+ </div>
+        
 
-    </div>
   )
 }
 
-export default Tablete
+export default ProductT

@@ -15,7 +15,7 @@ import Mobil from './Pagini 1A/Mobil'
 import Telefoane from './Magazin-Online/Telefoane'
 import News from './Pagini2A/News'
 import Accesorii from './Magazin-Online/Accesorii'
-import { Apple } from './Magazin-Online/apple'
+import Apple from './Magazin-Online/Apple'
 import Exclusiv from './Magazin-Online/Exclusiv'
 import Gadjeturi from './Magazin-Online/Gadjeturi'
 import Laptopuri from './Magazin-Online/Laptopuri'
@@ -36,10 +36,20 @@ import Grila from './Internet-Objects/Grila'
 import FibraTV from './Internet-Objects/FibraTV.JSX'
 import MoldcellPlus from './Internet-Objects/MoldcellPlus'
 import Product from './Magazin-Online/Product'
+import ProductA from './Magazin-Online/ProductA'
+import ProductE from './Magazin-Online/ProductE'
+import ProductAP from './Magazin-Online/ProductAP'
+import ProductT from './Magazin-Online/ProductT'
+import ProductN from './Magazin-Online/ProductN'
+import ProductG from './Magazin-Online/ProductG'
+import ProductH from './Magazin-Online/ProductH'
+import Cart from './Magazin-Online/Cart'
+
 const myrouter = createBrowserRouter([
   {
     element: <Loyaut/>,
     children:[
+    
       {
         path: "/",
         element: <Home/>
@@ -303,24 +313,97 @@ const myrouter = createBrowserRouter([
       {
         path: "/product/:id",
         element: <Product/>
-      }
+
+        
+      },
+
+     {
+      path: "/productA/:i",
+      element: <ProductA/>
+
+
+     } ,
+
+
+     {
+      path: "/productE/:e",
+      element: <ProductE/>
+
+
+     },
+
+
+     {
+      path: "/productAP/:a",
+      element: <ProductAP/>
+
+
+     } ,
+
+     {
+      path: "/productT/:t",
+      element: <ProductT/>
+
+
+     } ,
+
+     {
+      path: "/productN/:n",
+      element: <ProductN/>
+
+
+     },
+
+     {
+      path: "/productG/:g",
+      element: <ProductG/>
+
+
+     } ,
+
+
+     {
+      path: "/productH/:h",
+      element: <ProductH/>
+
+
+     } ,
+
+     {
+      path: "/cart",
+      element: <Cart/>
+
+
+     } 
+
+
 
  
 
 
       
-    ]
+    ]    
   }
+
 ])
+
+
+
 const App = () => {
   return (
-    <Context>
-      <div>
-       
-      </div>
-      <RouterProvider router={myrouter}/>
+
+  
+<Context>
+      
+        <div>
+          <RouterProvider router={myrouter} />
+        </div>
+    
     </Context>
-  )
-}
+  );
+};
+
+  
+
 
 export default App

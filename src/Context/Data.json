@@ -5,6 +5,8 @@
     "add": "3/32GB Graphite Blue",
     "credit": 105,
     "price": 2099,
+    "priceA": 1600,
+    
     "image": "https://ultra-smart.ru/center/iblock/7af/smartfon_xiaomi_redmi_9c_64_gb_nfc_siniy_detail.png"
 },
 
@@ -15,6 +17,7 @@
     "add": "8/256GB Blue",
     "credit": 890,
     "price": 8500,
+    "priceA": 8000,
     "image": "https://cdn1.ozone.ru/s3/multimedia-v/6569965243.jpg"
 },
 
@@ -25,6 +28,7 @@
     "add": "12/128GB White",
     "credit": 750,
     "price": 7000,
+    "priceA": 6500,
     "image": "https://image-us.samsung.com/SamsungUS/mobile/phones/06102019-new/First_s10_5G_Lockup1_Silver_gallery.jpg"
 },
 
@@ -34,16 +38,18 @@
     "brand": "Samsung",
     "add": "8/256GB White",
     "credit": 850,
+    "priceA": 8700,
     "price": 9000,
     "image": "https://www.androidro.ro/wp-content/uploads/samsung-galaxy-a13-poza-5.jpg"
 },
 
 
 {
-    "id": "Iphone 13 ",
+    "id": "Iphone 13",
     "brand": "Apple",
     "add": "8/64GB White",
     "credit": 1200,
+    "priceA": 17000,
     "price": 19000,
     "image": "https://basket-03.wb.ru/vol422/part42248/42248470/images/big/1.jpg"
 },
@@ -54,8 +60,9 @@
     "brand": "Apple",
     "add": "12/128GB White",
     "credit": 1300,
+    "priceA": 19000,
     "price": 21000,
-    "image": "https://cdn.ithinkdiff.com/wp-content/uploads/2022/07/iPhone-14-Pro-Max.png"
+    "image":"https://cdn.ithinkdiff.com/wp-content/uploads/2022/07/iPhone-14-Pro-Max.png"
 }
 
 

@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import { useContext } from 'react'
 import { Conte } from '../Context/Context'
 import { Link } from 'react-router-dom'
-
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -13,22 +12,174 @@ import { CiWallet } from "react-icons/ci";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
+import { FaSimCard } from "react-icons/fa";
+import { IoPhonePortraitSharp } from "react-icons/io5";
+import { FaHeadphonesAlt } from "react-icons/fa";
+import { GiFallingStar } from "react-icons/gi";
+import { IoLogoApple } from "react-icons/io5";
+import { IoIosTabletLandscape } from "react-icons/io";
+import { LiaLaptopSolid } from "react-icons/lia";
+import { IoWatchOutline } from "react-icons/io5";
+
+
+
+
+
+
 const Product = () => {
-    const {date} = useContext (Conte)
+
+
+
+
+
+  
+    const {date, addToCart} = useContext (Conte)
     const {id} = useParams()
     const currentProduct = date.find(obj=> obj.id === id)
+
+    
   return (
-    <div className='flex items-center flex-col gap-3'>
-        <img className='h-80 w-80 object-cover rounded-xl' src={currentProduct.image} alt="" />
+
+
+    <div>
+
+<div>
+      <header className='flex-justify-between align-center bg-gray-200 gap-9'>
+        <nav>
+          <ul className='flex gap-16 text-lg items-center p-3'>
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/conectare">
+
+<FaSimCard/>
+<h3>Conectare</h3>
+              </Link>
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/telefoane">
+
+<IoPhonePortraitSharp/>
+<h3>Telefoane</h3>
+              </Link>
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/accesorii">
+
+<FaHeadphonesAlt/>
+<h3>Accesorii</h3>
+              </Link>
+
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/exclusiv">
+
+<GiFallingStar/>
+<h3>Exclusiv</h3>
+              </Link>
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/apple">
+
+<IoLogoApple/>
+<h3>Apple</h3>
+              </Link>
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/tablete">
+
+<IoIosTabletLandscape/>
+<h3>Tablete</h3>
+              </Link>
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/laptopuri">
+
+<LiaLaptopSolid/>
+<h3>Leptopuri</h3>
+              </Link>
+
+            </li>
+
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/gadjeturi">
+
+<IoWatchOutline/>
+<h3>Gadjeturi</h3>
+              </Link>
+
+            </li>
+
+            <li className='font-semibold text-black text-lg hover:text-violet-900'>
+              <Link to="/televizoare">
+
+<FaSimCard/>
+<h3>Televizoare</h3>
+              </Link>
+
+            </li>
+
+          </ul>
+        </nav>
+      </header>
+    </div>
+<div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<br />
+<div className='flex items-center justify-center flex-col gap-3'>
+
+
+
+
+
+
+
+        <img className='h-2/4 w-80 object-cover rounded-xl' src={currentProduct.image} alt="" />
      
             <h2 className='text-3xl font-semibold'>{currentProduct.id}</h2>
             <h3 className='text-xl font-semibold text-gray-600'>{currentProduct.brand}</h3>
             <h3 className='text-xl font-semibold text-gray-500'>{currentProduct.add}</h3>
+            <div className='text'>
+
+            <h2>PRET CU ABONAMENT </h2>
+            <h3> {currentProduct.priceA} lei</h3>
+            <br />
+            <h2>PRET ONLINE </h2> 
+    <h3>{currentProduct.price} lei</h3>
+    <br />
+    <h2>IN RATE </h2> 
+     <h3>{currentProduct.credit}lei/lunar</h3>
+    </div>
             <Link to="/telefoane"><button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600'>Telefoane</button></Link>
+            <div className='text1a'>
+<br />
 
 
+            <button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart(currentProduct.id)}>Adauga in cos</button>
 
 
+      </div>
 
 
 <div>
@@ -113,9 +264,10 @@ const Product = () => {
 
         </div>
 
-        
+</div>
 
   )
 }
+
 
 export default Product

@@ -1,0 +1,59 @@
+[
+    {
+        "t": "Samsung Galaxy Tab A8 Wifi",
+        "brand": "Samsung",
+        "add": "3/32 X200 Grey",
+        "credit": 370,
+        "price": 3700,
+        "priceA": 3200,
+        
+        "image": "https://avatars.mds.yandex.net/get-mpic/4314340/img_id4523294365507516935.jpeg/orig"
+    },
+      
+    {
+        "t": "Tableta Xiomi Pad 5 Wi-FI",
+        "brand": "Xiomi",
+        "add": "6/128",
+        "credit": 750,
+        "price": 7199 ,
+        "priceA":6800,
+    
+        "image": "https://avatars.mds.yandex.net/get-mpic/5220932/img_id3659033264588573683.jpeg/orig"
+    },
+    
+    {
+        "t": "Tableta Apple Ipad 10.9 Cellurar + Wifi (2022)",
+        "brand": "Apple",
+        "add": "4/64 Blue",
+        "credit": 1645,
+        "price": 15299,
+        "priceA": 13000,
+        "image": "https://teek.ru/upload/iblock/0a8/0a81ef25a400c8cebd89ad78d9196f2e.jpg"
+    },
+    
+    
+    {
+        "t": "Tableta Samsung Galaxy Tab S8 Ultra 5G",
+        "brand": "Samsung",
+        "add": "12/512 GB Graphite",
+        "credit": 1745,
+        "priceA":25000,
+        "price": 28190,
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Untitled9810.jpg"
+    }
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]

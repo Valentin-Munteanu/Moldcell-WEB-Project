@@ -8,7 +8,8 @@ import { IoLogoApple } from "react-icons/io5";
 import { IoIosTabletLandscape } from "react-icons/io";
 import { LiaLaptopSolid } from "react-icons/lia";
 import { IoWatchOutline } from "react-icons/io5";
-
+import { useContext } from 'react';
+import { Conte } from '../Context/Context';
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -20,10 +21,17 @@ import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
 
 const Accesorii = () => {
- 
+   const {data,addToCart2} = useContext(Conte)
+  console.log(data)
 return (
 
     <div>
+
+
+
+
+
+
 
 
       <div>
@@ -121,46 +129,42 @@ return (
   
 </div>
 
-
-
-<div className= 'flex justify-center items-center  flex-col' >
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://cdn.mos.cms.futurecdn.net/wpqMKTCkzfT2pvngrkFVwP-1200-80.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Casti Apple AirPods Pro</h2>
-  <h3>Apple</h3>
-  <h3 className='font-semibold text-lg'>(2nd generation White)</h3>
-  <p className='font-semibold text-xl text-green-500' >605 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >6599 lei</p>
-
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://basket-05.wb.ru/vol755/part75576/75576215/images/big/1.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Casti Apple AirPods 3 Pro</h2>
-  <h3>Apple</h3>
-  <h3 className='font-semibold text-lg'>(3nd generation White)</h3>
-  <p className='font-semibold text-xl text-green-500' >655 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >7299 lei</p>
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://media.sweetwater.com/api/i/q-82__ha-a3eea15987c8b037__hmac-7dfb87a16babcbae68f858858c0657cf4a5c8a9e/images/items/750/Flip5Blk-large.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Boxă portabilă JBL Flip 6 Black</h2>
-  <h3>JBL</h3>
-  <h3 className='font-semibold text-lg'>Black</h3>
-  <p className='font-semibold text-xl text-green-500' >312 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >3100 lei</p>
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://eximo46.hr/wp-content/uploads/jbl-zvu%C4%8Dnik-png.png" alt="" />
-  <h2  className='font-semibold text-xl' >JBL Charge 4 </h2>
-  <h3>JBL</h3>
-  <h3 className='font-semibold text-lg'>Black</h3>
-  <p className='font-semibold text-xl text-green-500' >351 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >3500 lei</p>
+<br />
+{
+  data.map(obj =>(
+    <a href={`/productA/${obj.i}`} key={obj.i}>
 
 
 
 
 
+    <div className='flex justify-center items-center  flex-col'>
+
+      
+      
+<img className='h-72 rounded-xl border hover:border-violet-500 ' src={obj.image} alt="" />
+
+  <h2 className='font-semibold text-xl'>{obj.i}</h2>
+
+  <h3 className='font-semibold text-lg'>{obj.add}</h3>
+<br />
+
+
+<p className='font-semibold text-xl text-green-500'>{obj.credit} lei lunar</p>
+<p className='font-semibold text-xl text-green-700'>{obj.price} lei</p>
+
+<Link to={`/productA/${obj.i}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
+<br />
+<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart2(obj.i)}>Adauga in cos</button>
+
+<br />
 </div>
+
+
+    </a>
+    
+  ))
+}
 
 
 
@@ -242,8 +246,8 @@ return (
 
 
     </div>
- 
-
+      
+    
 )
  
 }

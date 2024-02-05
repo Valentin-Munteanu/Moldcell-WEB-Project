@@ -8,7 +8,8 @@ import { IoLogoApple } from "react-icons/io5";
 import { IoIosTabletLandscape } from "react-icons/io";
 import { LiaLaptopSolid } from "react-icons/lia";
 import { IoWatchOutline } from "react-icons/io5";
-
+import { useContext } from 'react';
+import { Conte } from '../Context/Context';
 import { FcProcess } from "react-icons/fc";
 import { FcTouchscreenSmartphone } from "react-icons/fc";
 import { SiAdguard } from "react-icons/si";
@@ -18,7 +19,9 @@ import { CiWallet } from "react-icons/ci";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
-const Televizore = () => {
+const Televizoare = () => {
+
+  const {tel,addToCart8} = useContext(Conte)
   return (
     <div>
       <div>
@@ -118,48 +121,32 @@ const Televizore = () => {
 
 <br />
 
+{
+tel.map(obj => (
+  <a href={`/productH/${obj.h}`}>
+
 <div className= 'flex justify-center items-center  flex-col' >
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://www.jagatreview.com/wp-content/uploads/2022/09/front-Xiaomi-TV-A2-43-Inch-FHD-1228x720.png" alt="" />
-  <h2  className='font-semibold text-xl' >Xiomi TV A2 43 </h2>
-  <h3 className='font-semibold text-lg'>32 Global Black</h3>
-  <p className='font-semibold text-xl text-green-500' >440 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >3990 lei</p>
+<img className='h-72 rounded-xl border hover:border-violet-500 ' src={obj.image} alt="" />
 
 
+<h2 className='font-semibold text-xl'>{obj.h}</h2>
 
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://vsesmart.ru/upload/iblock/fe8/efmv44l0xqbjydrzhu00tsa46bd6ebr1/televizor-xiaomi-mi-led-tv-p1-50-1.png" alt="" />
-  <h2  className='font-semibold text-xl' >Televizor Xiomi LED 2023</h2>
-  <h3 className='font-semibold text-lg'>4K UHD Global</h3>
-  <p className='font-semibold text-xl text-green-500' >800 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >7499 lei</p>
+<h3 className='font-semibold text-lg'>{obj.add}</h3>
+<br />
 
+<p className='font-semibold text-xl text-green-500'>{obj.credit} lei lunar</p>
+<p className='font-semibold text-xl text-green-700'>{obj.price} lei</p>
 
-
-
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://i.blogs.es/919eee/xiaomi-tv-q2-series/840_560.jpeg" alt="" />
-  <h2  className='font-semibold text-xl' >Televizor Xiomi Q2  </h2>
-  <h3 className='font-semibold text-lg'>55 Global Black</h3>
-  <p className='font-semibold text-xl text-green-500' >875 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >9599 lei</p>
-
-
-
-
-
-  <img className='h-72 rounded-xl border hover:border-violet-500 ' src="https://televizor.msk.ru/images/shop/tv-lg-46-55/lg-49nano866-49quot-2020_full.jpg" alt="" />
-  <h2  className='font-semibold text-xl' >Televizor LG 653UTE 65 </h2>
-  <h3 className='font-semibold text-lg'>Black</h3>
-  <p className='font-semibold text-xl text-green-500' >1215 pe luna</p>
-  <p className='font-semibold text-xl text-green-700' >13999 lei</p>
-
-
-
-
+<Link to={`/productH/${obj.h}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
+<br />
+<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart8(obj.h)}>Adauga in cos</button>
 
 </div>
 
+
+  </a>
+  ))
+}
 
 
 <div>
@@ -237,8 +224,10 @@ const Televizore = () => {
     </div>
 
 </div>
+
+
     </div>
   )
 }
 
-export default Televizore
+export default Televizoare

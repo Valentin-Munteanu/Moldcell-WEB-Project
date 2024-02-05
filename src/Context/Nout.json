@@ -1,0 +1,59 @@
+[
+    {
+        "n": "Laptop Lenovo IdeaPad 1",
+        "brand": "Lenovo",
+        "add": "15IGL7 N4040 4/256 SSB /  Gray",
+        "credit": 550,
+        "price": 4900,
+        "priceA": 4300,
+        
+        "image": "https://www.pcplanet.ru/public_files/products/f9/16/f916581133e58001ef888066c967bf5a/original.jpg"
+    },
+      
+    {
+        "n": "Laptop Apple MacBook Air 15 2023",
+        "brand": "Apple",
+        "add": "M2 8/256GB Midnight",
+        "credit": 3360,
+        "price": 35599 ,
+        "priceA":33000,
+    
+        "image": "https://applen1.ru/upload/medialibrary/macbook_air_15_2023.jpeg"
+    },
+    
+    {
+        "n": "Laptop Apple MacBook Air 2020",
+        "brand": "Apple",
+        "add": "M 1 8 /256GB Space Grey",
+        "credit": 2020,
+        "price": 18000,
+        "priceA": 16000,
+        "image": "https://cdn.wccftech.com/wp-content/uploads/2020/11/M1-MacBook-Air-1.jpg"
+    },
+    
+    
+    {
+        "n": "Laptop ACER Swift 3",
+        "brand": "Acer",
+        "add": "14 i5-1240P / 512 GB Haze Gold",
+        "credit": 1850,
+        "priceA":16000,
+        "price": 17000,
+        "image": "https://newmart.ru/upload/iblock/996/9965d89634774ba15531a0c0af1bbab5.jpg"
+    }
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]

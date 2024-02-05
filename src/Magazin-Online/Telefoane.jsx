@@ -21,7 +21,7 @@ import { MdContacts } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
 
 const Telefoane = () => {
-  const {date} = useContext(Conte)
+  const {date,addToCart} = useContext(Conte)
   console.log(date)
  
   return (
@@ -154,6 +154,7 @@ const Telefoane = () => {
 
 <Link to={`/product/${obj.id}`} className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600 '>Detalii</Link>
 <br />
+<button className='bg-gray-700 text-white px-3 py-1 flex items-center gap-2 text-lg rounded-md hover:bg-violet-600' onClick={() => addToCart(obj.id)}>Adauga in cos</button>
 
 <br />
 </div>
@@ -163,6 +164,9 @@ const Telefoane = () => {
     
   ))
 }
+<div>
+
+</div>
 
 <div>
 <header className='flex-justify-between align-center bg-gray-200 gap-9'>

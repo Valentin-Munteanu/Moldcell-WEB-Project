@@ -161,18 +161,14 @@ const Contacte = () => {
 Tot aici poți lua legătura cu un operator Moldcell.</p>
 
 <br />
-<p>Fix: 022 444 444 (tarif standard*) <br />
+<p>Fix: 022 444 444  <br />
 Mobil: (+373) 78 500 500 (gratuit pentru abonaţii Moldcell; tarif standard din alte rețele*) <br />
 Program: 08:00 - 23:00</p>
 <br />
 <p>Email: moldcell@moldcell.md</p> <br />
-<p>Program: Luni – Vineri: 9:00 - 18:00</p> <br />
+<p>Program: Luni – Vineri: 9:00 - 18:00</p> 
 <br />
-<h3>Despre comerciant</h3>
-<p>Denumirea juridică: ÎM MOLDCELL SA <br />
-Adresa juridică: MD-2060, mun. Chișinău, str. Belgrad 3 <br />
-Codul fiscal: 1002600046027 <br />
-Cod TVA: 0303561</p>
+
 
       </div>
 
